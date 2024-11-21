@@ -12,10 +12,10 @@
     pinctrl-1 = <&pinmux_usdhc1_dat3_nopull>;
     pinctrl-names = "default", "nopull";
     pwr-gpios = <&gpio10 2 GPIO_ACTIVE_LOW>;
-    max-current-180 = <1000>;  /* 设置1.8V下最大电流为1000mA */
-    max-bus-freq = <50000000>; /* 设置最大总线频率为50MHz */
-    min-bus-freq = <400000>;   /* 设置最小总线频率为400KHz */
-    power-delay-ms = <100>;    /* 电源稳定延时100ms */
+    max-current-180 = <1000>;
+    max-bus-freq = <50000000>;
+    min-bus-freq = <400000>;
+    power-delay-ms = <100>;
 
     wifi: nxp_wifi@0 {
         compatible = "nxp,wifi";
